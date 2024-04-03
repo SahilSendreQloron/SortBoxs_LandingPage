@@ -150,3 +150,16 @@ body{
         height: 80px; 
     } 
 } 
+
+
+
+
+/* Benefits section  */
+
+
+.benefits_css:hover{
+    color: white;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
