@@ -1,0 +1,152 @@
+body{
+    font-family: "Manrope", sans-serif;
+}
+
+.welcome{
+    background-image: url('./image/welcome_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+}
+
+/* .backgroundLines{
+    background-image: url('./image/lines.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    object-fit: cover;
+} */
+
+.payroll{
+    background-image: url('./image/wave1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+
+.features{
+    background-image: url('./image/feature_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.man_style{
+    width: 80%;
+}
+
+.mobile_css{
+    background-image: url('./image/sortbox_bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+
+
+/* ANIMATIONS FOR IMAGES  */
+
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft{
+    animation: slideInLeft 0.7s ease;
+}
+
+@keyframes slideInRight {
+    from{
+        transform: translateX(400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInRight{
+    animation: slideInRight 0.7s ease;
+}
+
+@keyframes slideInTop {
+    from{
+        transform: translateY(-150px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+.slideInTop{
+    animation: slideInTop 0.7s ease;
+}
+
+@keyframes slideInBottom {
+    from{
+        transform: translateY(150px);
+    }
+
+    to{
+        transform: translateY(100px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+.slideInBottom{
+    animation: slideInBottom 0.7s ease;
+}
+
+.fadeInTop{
+    -webkit-animation: fadeInTop 1s both;
+    -moz-animation: fadeInTop 1s both;
+    -o-animation: fadeInTop 1s both;
+    animation: fadeInTop 1s both;
+}
+
+@keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.shutter{
+    /* position: absolute;  */
+    overflow:hidden;
+    animation: shutter 2s linear forwards;
+}
+
+@keyframes shutter { 
+    0% { 
+        width: 0px; 
+        height: 0px; 
+    } 
+
+    30% { 
+        width: 50px; 
+        height: 0px; 
+    } 
+
+    60% { 
+        width: 50px; 
+        height: 80px; 
+    } 
+} 
